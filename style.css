@@ -1,0 +1,38 @@
+
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;color:#222}
+a{text-decoration:none;color:inherit}
+.container{max-width:1100px;margin:auto;padding:0 15px}
+
+.main-header{background:#0b3d2e;color:#fff;position:sticky;top:0;z-index:10}
+.main-header .container{display:flex;align-items:center;justify-content:space-between;padding:15px}
+.logo{font-size:22px;font-weight:bold}
+nav a{margin-left:15px;color:#fff;font-weight:600}
+
+.hero{background:#f2f6f5;padding:70px 0;text-align:center}
+.hero h1{font-size:36px;margin-bottom:10px}
+.hero p{font-size:18px;color:#555}
+
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;padding:40px 0}
+.card{border:1px solid #e5e5e5;border-radius:10px;overflow:hidden;background:#fff}
+.card img{width:100%;height:160px;object-fit:cover}
+.card .cbody{padding:15px}
+.card h3{margin:0 0 10px}
+.card p{color:#555}
+.btn{display:inline-block;margin-top:10px;background:#0b3d2e;color:#fff;padding:10px 14px;border-radius:6px}
+
+.section{padding:40px 0}
+.section h2{text-align:center;margin-bottom:20px}
+
+.detail{padding:40px 0}
+.detail h2{margin-top:0}
+.price{font-size:22px;font-weight:bold;color:#0b3d2e}
+
+.main-footer{background:#0b3d2e;color:#fff}
+.main-footer .container{padding:20px;text-align:center}
+
+.whatsapp-float{position:fixed;right:20px;bottom:20px;width:56px;height:56px;background:#25D366;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:30px;box-shadow:0 4px 10px rgba(0,0,0,.3);z-index:999}
+
+@media(max-width:600px){
+  .hero h1{font-size:28px}
+}
