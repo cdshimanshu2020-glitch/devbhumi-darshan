@@ -1,217 +1,55 @@
+
 <!DOCTYPE html>
-<html lang="hi">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Devbhumi Darshan | Chardham & Uttarakhand Tour Packages</title>
-  <meta name="description" content="Devbhumi Darshan Haridwar – Chardham Yatra, Uttarakhand Tour Packages, Taxi Service, Hotel Booking. Trusted Travel Partner." />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <style>
-    :root{
-      --primary:#f97316;
-      --secondary:#0f766e;
-      --dark:#0f172a;
-      --light:#f8fafc;
-      --gray:#64748b;
-    }
-    *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
-    body{background:var(--light);color:var(--dark)}
-    a{text-decoration:none;color:inherit}
-
-    /* HEADER */
-    header{
-      background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.65)),url('https://images.unsplash.com/photo-1501785888041-af3ef285b470') center/cover;
-      color:#fff;min-height:100vh
-    }
-    nav{
-      display:flex;justify-content:space-between;align-items:center;
-      padding:18px 8%;background:rgba(0,0,0,.35);
-      position:sticky;top:0;backdrop-filter:blur(8px);z-index:10
-    }
-    nav h1{font-size:26px;font-weight:700}
-    nav ul{display:flex;gap:22px;list-style:none}
-    nav ul li a{font-weight:500}
-
-    .hero{
-      padding:0 8%;display:flex;flex-direction:column;
-      justify-content:center;min-height:calc(100vh - 80px);max-width:850px
-    }
-    .hero h2{font-size:46px;line-height:1.2;margin-bottom:14px}
-    .hero p{font-size:18px;color:#e5e7eb;margin-bottom:22px}
-    .hero .btns{display:flex;gap:15px;flex-wrap:wrap}
-    .btn{
-      background:var(--primary);color:#fff;padding:12px 28px;
-      border-radius:30px;font-weight:600;display:inline-block
-    }
-    .btn.alt{background:#22c55e}
-
-    section{padding:80px 8%}
-    .section-title{text-align:center;margin-bottom:45px}
-    .section-title h3{font-size:34px}
-    .section-title p{color:var(--gray)}
-
-    /* PACKAGES */
-    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:25px}
-    .card{
-      background:#fff;border-radius:18px;overflow:hidden;
-      box-shadow:0 10px 30px rgba(0,0,0,.08);transition:.3s
-    }
-    .card:hover{transform:translateY(-8px)}
-    .card img{width:100%;height:200px;object-fit:cover}
-    .card .content{padding:20px}
-    .card h4{margin-bottom:8px}
-    .card p{font-size:14px;color:var(--gray);margin-bottom:12px}
-    .price{font-weight:700;color:var(--secondary)}
-
-    /* ABOUT */
-    .about{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
-    .about img{width:100%;border-radius:22px}
-    .about p{color:var(--gray);margin-top:15px}
-
-    /* FEATURES */
-    .features{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:25px}
-    .feature{
-      background:#fff;border-radius:18px;padding:25px;
-      box-shadow:0 8px 25px rgba(0,0,0,.07)
-    }
-    .feature h4{margin-bottom:8px;color:var(--secondary)}
-
-    /* CONTACT */
-    .contact{
-      background:linear-gradient(135deg,#0f766e,#115e59);
-      color:#fff;border-radius:26px;padding:60px
-    }
-    .contact h3{font-size:32px;margin-bottom:10px}
-    .contact p{margin-bottom:10px}
-
-    form{margin-top:25px;display:grid;gap:14px;max-width:420px}
-    input,textarea{
-      padding:12px 16px;border-radius:12px;border:none;outline:none
-    }
-    textarea{resize:none;height:100px}
-    form button{border:none;cursor:pointer}
-
-    iframe{width:100%;border-radius:22px;border:0;height:300px;margin-top:40px}
-
-    footer{background:#020617;color:#cbd5f5;text-align:center;padding:20px}
-
-    /* WHATSAPP FLOAT */
-    .whatsapp{
-      position:fixed;right:20px;bottom:20px;background:#25D366;
-      color:#fff;padding:14px 18px;border-radius:50px;
-      font-weight:600;box-shadow:0 10px 25px rgba(0,0,0,.3)
-    }
-
-    @media(max-width:900px){
-      .about{grid-template-columns:1fr}
-      .hero h2{font-size:36px}
-    }
-  </style>
+  <title>Devbhumi Darshan Tour & Travels</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
+<div id="header"></div>
 
-<header id="home">
-  <nav>
-    <h1>Devbhumi Darshan</h1>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#packages">Packages</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-  <div class="hero">
-    <h2>Devbhumi Darshan – Uttarakhand & Chardham Yatra Specialists</h2>
-    <p>Haridwar se shuru hone wali trusted Chardham Yatra, Uttarakhand tour packages, taxi & hotel booking – sab ek hi jagah.</p>
-    <div class="btns">
-      <a href="#packages" class="btn">View Packages</a>
-      <a href="https://wa.me/919675519611" class="btn alt">WhatsApp Booking</a>
-    </div>
+<section class="hero">
+  <div class="container">
+    <h1>Devbhumi Darshan Tour & Travels</h1>
+    <p>Char Dham • Do Dham • Ek Dham • Uttarakhand Tours</p>
   </div>
-</header>
+</section>
 
-<section id="packages">
-  <div class="section-title">
-    <h3>Popular Yatra Packages</h3>
-    <p>Haridwar se best curated spiritual journeys</p>
-  </div>
-  <div class="cards">
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1583875762487-5f8f7b9f9c62" alt="Chardham">
-      <div class="content">
-        <h4>Chardham Yatra</h4>
-        <p>Gangotri, Yamunotri, Kedarnath, Badrinath – complete package with cab & hotel.</p>
-        <div class="price">₹28,000 / person</div>
+<section class="section">
+  <div class="container">
+    <h2>Popular Packages</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1593693397690-362cb9666fc2">
+        <div class="cbody">
+          <h3>Char Dham Yatra</h3>
+          <p>Yamunotri • Gangotri • Kedarnath • Badrinath</p>
+          <a class="btn" href="pages/chardham.html">View Details</a>
+        </div>
       </div>
-    </div>
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1600788910106-7d03b38b9d52" alt="Gangotri">
-      <div class="content">
-        <h4>Gangotri – Yamunotri</h4>
-        <p>Short spiritual tour ideal for families & senior citizens.</p>
-        <div class="price">₹12,999</div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1586083702768-190ae093d34d">
+        <div class="cbody">
+          <h3>Kedarnath Yatra</h3>
+          <p>Haridwar – Guptkashi – Kedarnath</p>
+          <a class="btn" href="pages/kedarnath.html">View Details</a>
+        </div>
       </div>
-    </div>
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1627899687970-ef0f8bbf2b87" alt="Taxi">
-      <div class="content">
-        <h4>Taxi & Cab Services</h4>
-        <p>Haridwar, Rishikesh, Dehradun – clean & experienced drivers.</p>
-        <div class="price">Best Rates</div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1605649487212-47bdab064df7">
+        <div class="cbody">
+          <h3>Mussoorie Tour</h3>
+          <p>Queen of Hills</p>
+          <a class="btn" href="pages/mussoorie.html">View Details</a>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<section id="about">
-  <div class="section-title">
-    <h3>About Devbhumi Darshan</h3>
-    <p>Haridwar based trusted travel partner</p>
-  </div>
-  <div class="about">
-    <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" alt="Haridwar">
-    <div>
-      <h4>Why Devbhumi Darshan?</h4>
-      <p>Hum Haridwar, Uttarakhand se operate karte hain aur Chardham Yatra & spiritual tourism me vishesh anubhav rakhte hain.</p>
-      <p>Transparent pricing, local drivers, spiritual understanding aur customer satisfaction hamari pehchan hai.</p>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="section-title">
-    <h3>Why Choose Us</h3>
-  </div>
-  <div class="features">
-    <div class="feature"><h4>Local Experts</h4><p>Haridwar based team with ground knowledge.</p></div>
-    <div class="feature"><h4>Safe Yatra</h4><p>Experienced drivers & well-maintained vehicles.</p></div>
-    <div class="feature"><h4>Custom Packages</h4><p>Family, group & senior citizen friendly plans.</p></div>
-    <div class="feature"><h4>24x7 Support</h4><p>Yatra ke dauran full assistance.</p></div>
-  </div>
-</section>
-
-<section id="contact">
-  <div class="contact">
-    <h3>Booking & Enquiry</h3>
-    <p><b>Call / WhatsApp:</b> 9675519611, 7983782781</p>
-    <p><b>City:</b> Haridwar, Uttarakhand</p>
-
-    <form>
-      <input type="text" placeholder="Your Name" required>
-      <input type="tel" placeholder="Mobile Number" required>
-      <textarea placeholder="Your Travel Requirement"></textarea>
-      <button class="btn">Send Enquiry</button>
-    </form>
-
-    <iframe src="https://maps.google.com/maps?q=haridwar%20uttarakhand&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
-  </div>
-</section>
-
-<footer>
-  <p>© 2026 Devbhumi Darshan – Haridwar, Uttarakhand. All Rights Reserved.</p>
-</footer>
-
-<a class="whatsapp" href="https://wa.me/919675519611">WhatsApp Us</a>
-
+<div id="footer"></div>
+<div id="whatsapp"></div>
+<script src="js/load.js"></script>
 </body>
 </html>
